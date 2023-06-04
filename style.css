@@ -1,0 +1,104 @@
+:root {
+  --carcasa: #d2c9c4;
+  --carcasaBorde: #aea49b;
+  --marco: #3b2f33;
+  --boton_O: #8d8986;
+  --boton_N: #5e575e;
+  --pantalla: #bdbec2;
+  --pantallaBorde: #646367;
+  --cover: #d2c9c4;
+  --digitos: #151419;
+}
+
+body{
+  background-color:#333;
+  font-family:Roboto;
+}
+input{
+  visibility: hidden;
+}
+#select{
+filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 1));
+  display:block;
+  margin: 0 auto;
+}
+
+#calculadora{
+filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 1));
+display:block;
+margin: 0 auto;
+}
+
+#puntero{
+  cursor:pointer;
+  transition: cx .2s ease-in;
+}
+.carcasa{
+  fill:var(--carcasa);
+  stroke-width:4px;
+  stroke:var(--carcasaBorde);
+  transition: fill .3s ease-in;
+}
+.marco{
+fill:var(--marco);
+transition: fill .3s ease-in;
+}
+.boton_operacion, .boton_numero, .boton_clear, .boton_respuesta{
+  stroke-width:1.25px;
+  stroke:#111;
+}
+.boton_operacion{
+  fill:var(--boton_O);
+}
+.boton_numero{
+  fill:var(--boton_N);
+}
+.boton_clear{
+  fill:#d76179;
+}
+.boton_respuesta{
+  fill:#fb702c;
+}
+.numero, .signo{
+  text-anchor:middle;
+  fill:#fff;
+}
+.signo{
+  font-size:20px;
+}
+
+.capa, .capa2{
+  cursor:pointer;
+  x:2px;
+  y:2px;
+  width:38px;
+  height:32px;
+  ry:4px;
+  fill-opacity:0;
+  stroke-opacity:.2;
+  stroke-width:2;
+  stroke:#000;
+}
+.capa:hover , .capa2:hover{
+  fill:#fff;
+  fill-opacity:.2;
+  stroke:#fff;
+}
+#digitos{
+  fill:var(--digitos);
+}
+text{
+        -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+}
+.pantalla{
+  fill:var(--pantalla);
+  stroke:var(--pantallaBorde);
+  transition: fill .3s ease-in;
+}
+.cover{
+  fill:var(--cover);
+  transition: fill .3s ease-in;
+}
